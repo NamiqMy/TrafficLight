@@ -1,0 +1,108 @@
+body{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: black;
+    width: 100px;
+    height: 300px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px #360c0c;
+    background: black;
+}
+
+.red{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    animation: redlight 15s infinite;
+    background: rgb(62, 1, 1);
+}
+
+.yellow{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    animation: yellowlight 15s infinite;
+    background: rgb(70, 53, 0);
+}
+
+.green{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    animation: greenlight 15s infinite;
+    background: rgb(0, 53, 0);
+}
+
+@keyframes redlight{
+    0%{
+        background: rgb(55, 0, 0);
+    }
+    55%{
+        background: rgb(55, 0, 0);
+    }
+    65%{
+        background: red;
+    }
+    95%{
+        background: red;
+    }
+    100%{
+        background: rgb(55, 0, 0);
+    }
+}
+
+@keyframes yellowlight{
+    0%{
+        background: rgb(70, 53, 0);
+    }
+    45%{
+        background: rgb(70, 53, 0);
+    }
+    55%{
+        background: yellow;
+    }
+    80%{
+        background: rgb(70, 53, 0);
+    }
+    100%{
+        background: rgb(70, 53, 0);
+    }
+}
+
+@keyframes greenlight{
+    0%{
+        background: rgb(0, 53, 0);
+    }
+    45%{
+        background: rgb(2, 184, 2);
+    }
+    55%{
+        background: rgb(2, 184, 2);
+    }
+    80%{
+        background: rgb(0, 53, 0);
+    }
+    100%{
+        background: rgb(0, 53, 0);
+    }
+}
+
+.red,.yellow,.green{
+    animation-duration: 5s;
+}
